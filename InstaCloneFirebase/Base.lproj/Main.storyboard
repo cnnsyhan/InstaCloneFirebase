@@ -15,14 +15,54 @@
                     <view key="view" contentMode="scaleToFill" id="DzM-1X-dTf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="QiQ-pR-UCN">
+                                <rect key="frame" x="54" y="81" width="306" height="282"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zok-eT-r6C">
+                                <rect key="frame" x="54" y="409" width="306" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="n9W-bO-RYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQL-X2-IRB">
+                                <rect key="frame" x="140" y="492" width="134" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="d4T-Bn-AwG"/>
+                                </constraints>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="actionButtonClicked:" destination="nJx-wS-FL9" eventType="touchUpInside" id="n39-VW-nmZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="w5z-AK-pjg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QiQ-pR-UCN" firstAttribute="centerX" secondItem="DzM-1X-dTf" secondAttribute="centerX" id="3m3-fJ-d1f"/>
+                            <constraint firstItem="QiQ-pR-UCN" firstAttribute="trailing" secondItem="Zok-eT-r6C" secondAttribute="trailing" id="4dZ-8p-oHs"/>
+                            <constraint firstItem="Zok-eT-r6C" firstAttribute="top" secondItem="QiQ-pR-UCN" secondAttribute="bottom" constant="46" id="DcZ-Qo-sec"/>
+                            <constraint firstItem="QiQ-pR-UCN" firstAttribute="top" secondItem="w5z-AK-pjg" secondAttribute="top" constant="37" id="GAK-JX-GEa"/>
+                            <constraint firstItem="EQL-X2-IRB" firstAttribute="top" secondItem="Zok-eT-r6C" secondAttribute="bottom" constant="49" id="M9f-U3-lhW"/>
+                            <constraint firstItem="Zok-eT-r6C" firstAttribute="centerX" secondItem="EQL-X2-IRB" secondAttribute="centerX" id="ONK-8E-UDc"/>
+                            <constraint firstItem="w5z-AK-pjg" firstAttribute="bottom" secondItem="EQL-X2-IRB" secondAttribute="bottom" constant="222" id="dqg-jY-qgc"/>
+                            <constraint firstItem="EQL-X2-IRB" firstAttribute="leading" secondItem="w5z-AK-pjg" secondAttribute="leading" constant="140" id="hAg-5T-vg9"/>
+                            <constraint firstItem="QiQ-pR-UCN" firstAttribute="leading" secondItem="w5z-AK-pjg" secondAttribute="leading" constant="54" id="hDq-2O-DHj"/>
+                            <constraint firstItem="QiQ-pR-UCN" firstAttribute="leading" secondItem="Zok-eT-r6C" secondAttribute="leading" id="xff-hC-dqf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="6b1-8p-JgW"/>
+                    <connections>
+                        <outlet property="commentText" destination="Zok-eT-r6C" id="fkV-c3-w5R"/>
+                        <outlet property="imageView" destination="QiQ-pR-UCN" id="Oar-jD-wZs"/>
+                        <outlet property="uploadButton" destination="EQL-X2-IRB" id="KDA-jr-9ed"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h0U-4f-O5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-601" y="-437"/>
+            <point key="canvasLocation" x="-601.44927536231887" y="-437.27678571428572"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Rtu-kt-NVM">
@@ -170,6 +210,7 @@
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="121"/>
         <image name="s.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="select" width="200" height="200"/>
         <image name="u.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
