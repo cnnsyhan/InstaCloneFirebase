@@ -15,6 +15,7 @@
 		83DF558C255F009900472D3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83DF558B255F009900472D3E /* Assets.xcassets */; };
 		83DF558F255F009900472D3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83DF558D255F009900472D3E /* LaunchScreen.storyboard */; };
 		83DF55982560546E00472D3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83DF55972560546E00472D3E /* GoogleService-Info.plist */; };
+		83EDAA182565B6F700B9B154 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EDAA172565B6F600B9B154 /* FeedCell.swift */; };
 		83EE41042560938200590AF6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE41032560938100590AF6 /* FeedViewController.swift */; };
 		83EE41072560939500590AF6 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE41062560939500590AF6 /* UploadViewController.swift */; };
 		83EE4109256093C300590AF6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EE4108256093C300590AF6 /* SettingsViewController.swift */; };
@@ -32,6 +33,7 @@
 		83DF558E255F009900472D3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83DF5590255F009900472D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83DF55972560546E00472D3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		83EDAA172565B6F600B9B154 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		83EE41032560938100590AF6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		83EE41062560939500590AF6 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		83EE4108256093C300590AF6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				83DF5584255F007800472D3E /* SceneDelegate.swift */,
 				83DF5586255F007800472D3E /* ViewController.swift */,
 				83EE41032560938100590AF6 /* FeedViewController.swift */,
+				83EDAA172565B6F600B9B154 /* FeedCell.swift */,
 				83EE41062560939500590AF6 /* UploadViewController.swift */,
 				83EE4108256093C300590AF6 /* SettingsViewController.swift */,
 				83DF5588255F007800472D3E /* Main.storyboard */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83EDAA182565B6F700B9B154 /* FeedCell.swift in Sources */,
 				83DF5587255F007800472D3E /* ViewController.swift in Sources */,
 				83EE41072560939500590AF6 /* UploadViewController.swift in Sources */,
 				83DF5583255F007800472D3E /* AppDelegate.swift in Sources */,
